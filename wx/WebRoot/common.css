@@ -1,0 +1,102 @@
+@charset "utf-8";
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+}
+body,div,p,blockquote,hr,ul,ol,li,h1,h2,h3,h4,h5,h6,menu,dd,dl,form,fieldset,input,textarea,caption,select,button,input,pre,hr,td,th,address,section,article,aside,header,footer,nav,dialog,figure,hgroup,label,span,strong,i,s {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+}
+h1,h2,h3,h4,h5 {
+    font-weight: normal;
+}
+em,i,strong {
+    font-style: normal;
+}
+ul,ol,li {
+    list-style: none;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+input,select,textarea,button {
+    border: none;
+    font-size: 100%;
+    outline: none;
+    -webkit-appearance: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 14px;
+    color: #333;
+    font-family: Microsoft Yahei,Helvetica Neue,sans-serif;
+    -webkit-text-size-adjust: none;
+}
+}
+
+.wrapper {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 60px 0 0;
+	background: #f7f7f7;
+}
+.wrapper .bt {
+	width: 100%;
+	float: left;
+	color:#000 ;
+	padding: 10px;
+	margin: 10px 0;
+    font-size:16px;
+    
+}
+.wrapper ul li{width: 100%; margin: 10px 0 10px 0; float: left;}
+.wrapper .bt span{ width:32%; float: left; padding-top:7px; }
+.wrapper .bt .bg{ width: 50%; height: 40px; border-radius:10px; float: left; border: 1px solid #ccc;}
+.wrapper .bt textarea{ width: 60%; height: 140px; border-radius:10px; float: left; border: 1px solid #ccc;}
+.wrapper .bt .tb{ width:80px; height: 80px; border-radius:10px; float: left; border: 1px solid #ccc;}
+.wrapper .anniu{ width:30%; height: 45px; border-radius:10px; float: left; text-align: center; margin-left: 40%; background: #0068ff; font-size: 16px; color: aliceblue;}
+
+/*单项工程信息*/
+.kuang{ border: 1px solid #ccc; margin-top: 10px; margin-left:5%;}
+.kuang_bj{ border-bottom:1px solid #ccc; padding: 5px 0 5px 0; background: #e5e5e5; text-align: center; font-size:20px;}
+.kuang_bottom{ border-bottom:1px solid #ccc; padding: 5px 0 5px 8px;}
+.anniu1{ width:80%; height:30px; border-radius:10px; text-align: center;background: #0068ff; font-size: 16px; color: aliceblue;}
+.kuang span{ font-size:16px;}
+
+/*项目信息*/
+.kuang_bottom1{border-bottom:1px solid #ccc;}
+.wz{ padding: 5px 0 5px 8px; font-size:16px;}
+.kuang_right{ border-right: 1px solid #ccc;}
+.jr{padding: 5px 0;}
+.jr a{ font-size:18px; padding: 15px 0; color:#0068ff;}
+
+/*基础完工记录*/
+.margin-left{margin-left:3%; margin-top: 10px;}
+.margin-left1{margin-left:3%;}
+.yuan{width:20px; height:20px; background: #009944;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%; margin: 2px 0 0 8px;}
+.yuan1{width:20px; height:20px;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%; margin: 2px 0 0 7px; border: 1px solid #009944;border-radius: 50%;}
+.button{width:100%; height:30px; border-radius:6px; float: left; text-align: center; background: #0068ff; font-size: 14px; color: aliceblue;}
+.button1{width:80%; height:30px; margin-left:20%; border-radius:6px; float: left; text-align: center; background: #0068ff; font-size: 14px; color: aliceblue;}
+.button2{width:100%; height:30px; border-radius:6px; float: left; text-align: center; background: #0068ff; font-size: 14px; color: aliceblue;}
+.kuang_left{border-left:1px solid #666;}
+.kuang_right1{border-right:1px solid #666;}
+.bt1{ color: #888; font-size: 14px; line-height: 30px;}
+

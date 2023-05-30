@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    
+    <script src="jquery.min.js"></script>
+    <script src="alert.js"></script>
+</head>
+<body>
+<div id="updateDiv" class="display_none">
+     <input id="alert" type="button" value="Alert" />  
+  <input id="confirm" type="button" value="Confirm" /> 
+</div>
+</body>
+</html>
+<script type="text/javascript">    
+    $("#alert").bind("click", function () {   
+        myAlert('系统提示','登录成功！',function(){   
+            //要回调的方法  
+            window.location.href="http://www.baidu.com"
+        });  
+    });  
+   
+     
+    $("#confirm").bind("click", function () {   
+        myConfirm('系统确认框','登录之后才能查看！',function(r){  
+            if(r){  
+                //...点确定之后执行的内容  
+                window.location.href="http://www.baidu.com"  
+            }  
+        });       
+    });  
+    
+    myAlert('','您所填报的信息将实时推送至黑龙江省住建厅及国家住建部四库一平台系统。你单位应本着严谨、负责的态度，认真详实地填报核对所填信息，务必确保信息准确，并对填报信息的真实性、有效性负责。如因你单位填报有误造成项目及企业业绩信息失实，由此产生的一切后果由填报企业承担。',function(){   
+        //要回调的方法  
+       // window.location.href="http://www.baidu.com"
+    }); 
+ 
+  </script>
