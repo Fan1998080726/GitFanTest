@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace ="delay" > 
+  <typeAlias alias="cooperateUnitsVo" type="com.sdkj.matters.vo.CooperateUnitsVo" />
+  <typeAlias alias="mattersupdateVo" type="com.sdkj.matters.vo.MattersupdateVo" />
+  <typeAlias alias="mattersVo" type="com.sdkj.matters.vo.MattersVo" />
+  <typeAlias alias="feedbackvo" type="com.sdkj.feedback.vo.FeedbackVo" />
+  <typeAlias alias="parmsVo" type="com.sdkj.matters.vo.ParmsVo" />
+  	<typeAlias alias="uploadFileVo" 	type="com.sdkj.common.vo.UploadFileVo" />
+  	<typeAlias alias="delayvo" 	type="com.sdkj.Delay.vo.DelayVo" />
+ 
+ 
+ 	<update	id="addDelay"		 parameterClass="delayvo"			>
+ 				 insert into delay
+   (id, fid, inittime,delaybreak,matter_id,state,userid)
+ values
+   (#id#,#fid#,#inittime#,#delaybreak#,
+   	 #matter_id#,#state#,#userid#)
+ 				
+ 				
+ 	</update>
+ 	
+ 	<update	id="SaveAuditDelay"		 parameterClass="delayvo"			>
+	 	 update delay
+	    set
+	        state =#state#,
+	        statecontent = #statecontent#,
+	        shenhetime = #shenhetime#
+	  where 
+			 id = #id#
+ 	</update>
+ 	
+ 	
+ 	<select	id="queryAllDelay"	 parameterClass="java.lang.String"			resultClass="delayvo"	 >
+ 	$value$
+ 	</select>
+ 	
+ 	
+ 	<select	id="queryDelayById"	 parameterClass="java.lang.String"			resultClass="delayvo"	 >
+ 	$value$
+ 	</select>
+ 
+ 
+</sqlMap > 

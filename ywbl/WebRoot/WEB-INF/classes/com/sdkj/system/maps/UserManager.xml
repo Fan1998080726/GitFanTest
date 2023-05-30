@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace ="userinfo" > 
+
+
+   <typeAlias alias ="userInfo" type ="com.sdkj.system.vo.UserInfo"/> 
+
+   <select id ="findUser" resultClass="java.util.HashMap" parameterClass ="java.lang.String"  > 
+    	$value$
+   </select > 
+   
+   
+   	<select id="findUserListCount" parameterClass="java.lang.String" resultClass="int">
+		select count(*)  as ucount from ($value$)
+	</select>
+	
+   	<select id="queryforid" parameterClass="java.lang.String" resultClass="java.util.HashMap">
+		$value$
+	</select>
+	
+   	<select id="queryrolelist" parameterClass="java.lang.String" resultClass="java.util.HashMap">
+		$value$
+	</select>
+	
+   	<select id="queryuser" parameterClass="java.lang.String" resultClass="userInfo">
+	   	select a.id,a.login_id,a.login_password,a.user_name,
+		a.role_id,a.phone,a.email,a.address,a.memo,a.buildCorpCode,b.role_id,c.dept_id 
+		from system_user_info a,system_role_info b,system_dept_info c
+		where a.role_id=b.role_id
+		and b.dept_id=c.dept_id
+		and a.id = #id#
+	</select>
+		<select id="queryPass" parameterClass="java.lang.String" resultClass="java.lang.String">
+	   	$value$
+	</select>
+	 	<select id="queryUserMax" parameterClass="java.lang.String" resultClass="int">
+			$value$
+	</select>
+	<insert id="adduser" parameterClass="userInfo">
+		insert into system_user_info(id,login_id,login_password,user_name,role_id,phone,email,address,memo,systime,createUser,BuildCorpCode)
+		values(#id#,#login_id#,#login_password#,#user_name#,#role_id#,#phone#,#email#,#address#,#memo#,#systime#,#createUser#,#BuildCorpCode#)
+	</insert>
+   
+   	<update id="resetPass" parameterClass="java.lang.String" >
+			$value$
+	</update>
+	   	<update id="edituser" parameterClass="userInfo" >
+		
+		update system_user_info set login_id = #login_id#,
+		login_password = #login_password#,user_name = #user_name# ,
+		role_id = #role_id#,
+		phone = #phone#,email = #email#,address = #address#,memo = #memo#,BuildCorpCode=#BuildCorpCode#
+		where id = #id#
+		
+	</update>
+   	<delete id="deleteuser" parameterClass="java.lang.String">
+		delete from system_user_info where  id  = #id#
+	</delete>
+	
+	<select  id="querypassword" parameterClass="java.lang.String" resultClass="userInfo">
+	  select id,login_password from system_user_info
+	</select>
+	
+	<update id="editpassword" parameterClass="userInfo">
+	  update system_user_info set login_password=#login_password# where id=#id#  
+	</update>
+   	
+   	<select id="queryCreateUser" parameterClass="java.lang.String" resultClass="userInfo">
+	   	select a.id,a.login_id,a.login_password,a.user_name,
+		a.role_id,a.phone,a.email,a.address,a.memo,a.buildCorpCode,b.role_id,c.dept_id 
+		from system_user_info a,system_role_info b,system_dept_info c
+		where a.role_id=b.role_id
+		and b.dept_id=c.dept_id
+		and a.createuser = #id#
+	</select>
+	
+	<!-- 20200405  txb begin-->
+	  	<select id="queryUserByOpenId" parameterClass="java.lang.String" resultClass="userInfo">
+	   	select a.id,a.login_id,a.login_password,a.user_name,
+		a.role_id,a.phone,a.email,a.address,a.memo,a.buildCorpCode,a.createuser,b.role_id,c.dept_id 
+		from system_user_info a,system_role_info b,system_dept_info c
+		where a.role_id=b.role_id
+		and b.dept_id=c.dept_id
+		and a.address = #id#
+	</select>
+	<insert id="adduser_back" parameterClass="userInfo">
+		insert into SYSTEM_USER_INFO_BACK(id,login_id,login_password,user_name,role_id,phone,email,address,memo,systime,createUser,BuildCorpCode)
+		values(#id#,#login_id#,#login_password#,#user_name#,#role_id#,#phone#,#email#,#address#,#memo#,#systime#,#createUser#,#BuildCorpCode#)
+	</insert>
+<!-- 		<update id="edituser_back" parameterClass="userInfo" > -->
+		
+<!-- 		update SYSTEM_USER_INFO_BACK set login_id = #login_id#, -->
+<!-- 		login_password = #login_password#,user_name = #user_name# , -->
+<!-- 		role_id = #role_id#, -->
+<!-- 		phone = #phone#,email = #email#,address = #address#,memo = #memo#,BuildCorpCode=#BuildCorpCode# -->
+<!-- 		where id = #id# -->
+		
+<!-- 	</update> -->
+	<!-- 20200405  txb end-->
+</sqlMap > 

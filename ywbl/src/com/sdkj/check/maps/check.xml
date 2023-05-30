@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace ="check" > 
+  <typeAlias alias="checkvo" type="com.sdkj.check.vo.CheckVo" />
+   <typeAlias alias ="userInfo" type ="com.sdkj.system.vo.UserInfo"/> 
+ 	
+ 	<select	id="queryCheckStatistics"	 parameterClass="java.lang.String"			resultClass="checkvo"	 >
+ 	$value$
+ 	</select>
+ 	
+ 	
+ 	<select	id="queryMonthDeptCheckStatisticsPhoto"	 parameterClass="java.lang.String"			resultClass="checkvo"	 >
+ 	$value$
+ 	</select>
+ 	
+ 	<select	id="queryDeptUserInfo"	 parameterClass="java.lang.String"			resultClass="userInfo"	 >
+ 	$value$
+ 	</select>
+ 
+ 	<select	id="queryMattersRank"	 parameterClass="java.lang.String"			resultClass="checkvo"	 >
+ 	$value$
+ 	</select>
+ 
+ 	<select	id="queryPointScore"	 parameterClass="java.lang.String"			resultClass="checkvo"	 >
+ 	$value$
+ 	</select>
+ 
+ 	<select	id="queryEndMattersRank"	 parameterClass="java.lang.String"			resultClass="checkvo"	 >
+ 	$value$
+ 	</select>
+ 
+ 	<select	id="queryCheckStatisticsPhoto"	 parameterClass="java.lang.String"			resultClass="checkvo"	 >
+ 	$value$
+ 	</select>
+ 	
+ 	<select	id="queryStandCheckList"	 parameterClass="java.lang.String"			resultClass="checkvo"	 >
+ 	$value$
+ 	</select>
+ 	
+ 	
+ 	<select	id="queryWorkMassRank"	 parameterClass="java.lang.String"			resultClass="checkvo"	 >
+ 	$value$
+ 	</select>
+ 	
+ 	
+ 
+ 
+</sqlMap > 

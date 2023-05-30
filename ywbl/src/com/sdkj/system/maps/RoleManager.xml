@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace ="Role" > 
+
+
+	<typeAlias alias ="role" type ="com.sdkj.system.vo.Role"/> 
+	<typeAlias alias ="menus" type ="com.sdkj.system.vo.Menus"/> 
+	<typeAlias alias ="deptVo" type ="com.sdkj.system.vo.DeptVo"/> 
+<typeAlias alias ="userInfo" type ="com.sdkj.system.vo.UserInfo"/> 
+
+  	<select id ="findRole" resultClass="java.util.HashMap" parameterClass ="java.lang.String"  > 
+    	$value$
+   </select > 
+   
+   	<select id="findRoleListCount" parameterClass="java.lang.String" resultClass="int">
+		select count(*) as roleunt from ($value$)
+	</select>
+
+  	<select id="queryroleid" parameterClass="java.lang.String" resultClass="java.util.HashMap">
+		$value$
+	</select>
+	
+	<select id="querymaxroleid" parameterClass="java.lang.String" resultClass="int">
+		$value$
+	</select>
+	
+	
+	<insert id="addrole" parameterClass="role">
+		insert into system_role_info(role_id,role_name,memo,dept_id)
+		values(#role_id#,#role_name#,#memo#,#dept_id#)
+	</insert>
+	
+	<update id="updaterole" parameterClass="role">
+		update system_role_info set role_name = #role_name# , memo = #memo# ,dept_id=#dept_id# where role_id = #role_id#
+	</update>
+	
+	
+	<select id="queryrole" parameterClass="java.lang.String" resultClass="role">
+		select * from system_role_info where role_id = #role_id#
+	</select>
+	
+	
+	<select id="findRoleMenuList" parameterClass="String" resultClass="menus">
+		SELECT
+			smi.*, srm.role_id,
+			srm.rm_add,
+			srm.rm_update,
+			srm.rm_del
+		FROM
+			system_menu_info smi
+		LEFT JOIN (select * from system_role_menu where role_id = #roleId#) srm 
+		ON smi.menu_id = srm.menu_id
+		 ORDER BY
+		  smi.menu_id
+	</select>
+	
+	
+	<insert id="inserRoleMenus" parameterClass="java.util.HashMap">
+		insert into system_role_menu (role_id,menu_id,rm_add,rm_update,rm_del)
+		values(#role_id#,#menu_id#,#rm_add#,#rm_update#,#rm_del#)
+	</insert>
+	
+	<delete id="deleterole" parameterClass="java.lang.String">
+		delete from system_role_info where  role_id  = #role_id#
+	</delete>
+   
+   	<delete id="deleteRoleMenuByRoleId" parameterClass="java.lang.String">
+		delete from system_role_menu where role_id=#role_id#
+	</delete>
+	
+	<select id="getDeptList" resultClass="deptVo">
+		select dept_id,dept_name,dept_describe,dept_app_user from system_dept_info
+	</select>
+   
+    <select id="getRoleListByDept" resultClass="role" parameterClass="java.lang.String">
+   		select role_id,role_name,memo,dept_id
+		from system_role_info where dept_id=#dept_id#
+    </select>
+    
+    <select id="getUserRight" parameterClass="java.util.HashMap" resultClass="menus">
+    	select  a.rm_add,a.rm_update,a.rm_del from system_role_menu a,system_menu_info b 
+		where a.menu_id=b.menu_id 
+		and b.menu_url=#url#
+		and a.role_id=#role_id#
+    </select>
+    
+    <select id="getUserListByRole" parameterClass="java.lang.String" resultClass="int">
+    	select count(*) from system_user_info where role_id=#role_id#
+    </select>
+</sqlMap > 

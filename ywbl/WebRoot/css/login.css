@@ -1,0 +1,79 @@
+login1.jsp@charset "utf-8";
+/* CSS Document */
+div { margin:0 auto; padding:0; border:none;}
+body{background:#125e8f; margin:0;padding:0; font-family:"Î¢ÈíÑÅºÚ"£¬"ËÎÌå",Arial; color:#666666; text-align:left;}
+ul,ol,li,p,h1,h2,h3,h4,h5,h6,table,th,form,fieldset,img,dl,dt,dd{margin:0;padding:0; color:#666666; text-align:left; list-style:none;}
+.main{
+	width:100%;
+	margin:0 auto;
+	padding:0px;
+	height:700px;
+	background:url(../images/login_bj.jpg) center no-repeat;
+}
+.maintousu{
+	width:100%;
+	margin:0 auto;
+	padding:0px;
+	height:700px;
+	background:url(../images/logintousu.jpg) center no-repeat;
+}
+.main01{
+	width:1004px;
+	margin:0 auto;
+	padding:0px;
+	height:700px;
+	background:url(../images/login_bj_02.jpg) center no-repeat;
+}
+.login{
+	width:300px;
+	float:left;
+	height:170px;
+	padding:342px 0 0 460px;
+}
+.login div{
+	width:300px;
+	float:left;
+	/*height:51px;*/
+}
+.login div input {
+	width:196px;
+	float:left;
+	height:26px;
+	line-height:26px;
+	border: 1px solid #53aee1;
+	color: #1D699B;
+	padding-left:10px;
+	margin-bottom:10px;
+}
+.login img{ margin:0 8px;border:none;}
+.main01 .lk {
+	width:1004px;
+	height: 120px;
+	line-height: 120px;
+	color: #FFF;
+	float:left;
+	font-size:12px;
+	text-align:center;
+}
+.main .main01 .login div input {
+	line-height: 26px;
+	height: 26px;
+	border: 1px solid #53aee1;
+	background-image: url(../images/login_03.gif);
+	background-repeat: repeat-x;
+	background-color: #FFF;
+	color: #1D699B;
+	padding-left: 26px;
+	overflow: hidden;
+	width: 180px;
+}
+.main .main01 .login div .input01 {
+	background-image: url(../images/login_01.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.main .main01 .login div .input02 {
+	background-image: url(../images/login_02.gif);
+	background-repeat: no-repeat;
+	background-position: left;	
+}

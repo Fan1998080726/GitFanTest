@@ -1,0 +1,150 @@
+﻿
+查询日期类型数据  20190903
+ select * from tbprojectfinishmanage t where to_char(t.lastupdatedate,'yyyy-mm-dd')='2019-09-03'
+
+菜单权限左连接20190321
+
+select aa.menu_id,aa.menu_name,bb.menu_name as  城建处 ,cc.menu_name as 监察大队  ,dd.menu_name as 建管处  ,ee.menu_name as 招标办  ,ff.menu_name as  住宅处 ,gg.menu_name as 设计处  ,hh.menu_name as 安全站  ,ii.menu_name as 造价站  ,jj.menu_name as 企管站  
+,kk.menu_name as 散办 ,ll.menu_name as 质监总站  ,mm.menu_name as 收费办  ,oo.menu_name as  清欠办 ,pp.menu_name as 市政站  ,qq.menu_name as  审批办 ,rr.menu_name as  墙改办 
+,ss.menu_name as 科技处  ,tt.menu_name as  供排水处 ,uu.menu_name as 法制处  ,nn.menu_name as 管线办  ,ww.menu_name as   燃气办  from (
+select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id group by m.menu_id,m.menu_name order by m.menu_id)  aa
+  left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='城建处' group by m.menu_id,m.menu_name  order by m.menu_id) bb on aa.menu_id=bb.menu_id
+   left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='监察大队' group by m.menu_id,m.menu_name  order by m.menu_id) cc on aa.menu_id=cc.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='建管处' group by m.menu_id,m.menu_name  order by m.menu_id) dd on aa.menu_id=dd.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='招标办' group by m.menu_id,m.menu_name  order by m.menu_id) ee on aa.menu_id=ee.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='住宅处' group by m.menu_id,m.menu_name  order by m.menu_id) ff on aa.menu_id=ff.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='设计处' group by m.menu_id,m.menu_name  order by m.menu_id) gg on aa.menu_id=gg.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='安全站' group by m.menu_id,m.menu_name  order by m.menu_id) hh on aa.menu_id=hh.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='造价站' group by m.menu_id,m.menu_name  order by m.menu_id) ii on aa.menu_id=ii.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='企管站' group by m.menu_id,m.menu_name  order by m.menu_id) jj on aa.menu_id=jj.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='散办' group by m.menu_id,m.menu_name  order by m.menu_id) kk on aa.menu_id=kk.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='质监总站' group by m.menu_id,m.menu_name  order by m.menu_id) ll on aa.menu_id=ll.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='收费办' group by m.menu_id,m.menu_name  order by m.menu_id)  mm on aa.menu_id=mm.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='清欠办' group by m.menu_id,m.menu_name  order by m.menu_id) oo on aa.menu_id=oo.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='市政站' group by m.menu_id,m.menu_name  order by m.menu_id) pp on aa.menu_id=pp.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='审批办' group by m.menu_id,m.menu_name  order by m.menu_id) qq on aa.menu_id=qq.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='墙改办' group by m.menu_id,m.menu_name  order by m.menu_id) rr on aa.menu_id=rr.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='科技处' group by m.menu_id,m.menu_name  order by m.menu_id) ss on aa.menu_id=ss.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='供排水处' group by m.menu_id,m.menu_name  order by m.menu_id) tt on aa.menu_id=tt.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='法制处' group by m.menu_id,m.menu_name  order by m.menu_id) uu on aa.menu_id=uu.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='管线办' group by m.menu_id,m.menu_name  order by m.menu_id) nn on aa.menu_id=nn.menu_id
+     left join 
+ (select m.menu_id,m.menu_name from system_role_menu t,SYSTEM_ROLE_INFO f,SYSTEM_dept_INFO i,system_menu_info m
+ where t.role_id=f.role_id and f.dept_id=i.dept_id and t.menu_id=m.menu_id and i.dept_name='燃气办' group by m.menu_id,m.menu_name  order by m.menu_id)  ww on aa.menu_id=ww.menu_id
+  
+
+
+
+  
+
+
+
+  insert into  zdb_table t(t.id,t.title,t.context,t.dates,t.times) select n_id,n_title,n_content,substr(to_char(n_date,'yyyy-MM-dd hh24:mi:ss'),0,10),to_char(n_date,'yyyy-MM-dd hh24:mi:ss') from t_news where (to_char(n_date,'yyyy-MM-dd hh24:mi:ss') like '%2018%' or to_char(n_date,'yyyy-MM-dd hh24:mi:ss') like '%2019%')
+       
+
+
+两个表关联更新数据    
+               update TBBUILDERLICENCEMANAGE a set a.censorinfonum  =  (select  max(b.censorinfonum) from tbprojectcensorinfo  b where a.CENSORNUM=b.examinationnumber and   b.prjnum<>'2301001509060101' ) 
+
+
+  update buildingorder1 a -- 使用别名
+set the_agency=(select b.agencyCorpName from TBTENDERINFOSG b where b.id=a.id)
+where exists (select 1
+from TBTENDERINFOSG b
+where b.id=a.id
+)
+
+select count(*) from TBTenderInfoSg  where  1=1 and enddate like '2016%' and prjnum like '%01__'
+
+
+ select * from tbprojectinfo as of timestamp to_Date('2017-08-11 09:59:00','yyyy-mm-dd hh24:mi:ss') where systime like '%2017%'  order by id asc
+
+	查询截止某个时间段的数据
+
+
+update  tbbuilderlicencemanage1 t set t.builderlicencenum=CONCAT(t.prjnum,'-JX-001')  where t.id like '%201512%'
+
+
+
+
+  update tbbuilderlicencemanage t set SUPERVISIONIDCARD=replace(SUPERVISIONIDCARD,',','')
+
+
+	TBPROJECTINFO_UPLOAD
+	
+	
+	     update wageguaranteenmg t   set t.prjnum =(select prjnum from TBBUILDERLICENCEMANAGE d where d.wageGuaranteeNMGID=t.numbers and rownum=1)
+       
+        来自: 谭聪 (PC-20170707FBKB)
+ 时间: 2018-07-17 星期二 17:13:59 (RSA)(封装)
+-------------------------------------
+select * from 表名 as of timestamp to_timestamp('2013-05-29 15:29:00','yyyy-mm-dd hh24:mi:ss');
+
+=====================================
+ 来自: 谭聪 (PC-20170707FBKB)
+ 时间: 2018-07-17 星期二 17:14:56 (RSA)(封装)
+-------------------------------------
+select * from checkfeedback as of timestamp to_timestamp('2018-07-17 09:29:00','yyyy-mm-dd hh24:mi:ss');
+
+=====================================
+ 来自: 谭聪 (PC-20170707FBKB)
+ 时间: 2018-07-17 星期二 17:16:23 (RSA)(封装)
+-------------------------------------
+select * from (select * from checkfeedback as of timestamp to_timestamp('2018-07-17 09:29:00','yyyy-mm-dd hh24:mi:ss')) where id='20180608104729830623956250'
+
+
+	select t.*, t.rowid from tbbuilderlicencemanage t order by t.lastupdatedate desc
+
+       select t.*, t.rowid from tbbuilderlicencemanage t  where to_char(t.lastupdatedate) like '%2018%'
+       
+      SELECT * FROM tbbuilderlicencemanage t WHERE(to_char(t.lastupdatedate,'yyyy-MM-dd hh24:mi:ss') LIKE '%2018-10-23%')
+      
+    delete  FROM tbbuilderlicencemanage t WHERE(to_char(t.lastupdatedate,'yyyy-MM-dd hh24:mi:ss') LIKE '%2018-10-23%')
+    
+     SELECT pkid FROM tbbuilderlicencemanage t WHERE(to_char(t.lastupdatedate,'yyyy-MM-dd hh24:mi:ss')) <'2018-10-23' group by pkid
+     
+    delete  FROM tbbuilderlicencemanage t WHERE(to_char(t.lastupdatedate,'yyyy-MM-dd hh24:mi:ss')) <'2018-10-23' group by pkid
+
+	    update  contract t set t.endsubdate=substr(t.initsystime,0,10)
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace ="prjcheckRYTJ" > 
+  <typeAlias alias="evaluationTableVo" type="com.sdkj.TimeScore.vo.EvaluationTableVo" />
+  <typeAlias alias="standardVo" type="com.sdkj.TimeScore.vo.StandardVo" />
+   <typeAlias alias="mattersVo" type="com.sdkj.matters.vo.MattersVo" />
+   <typeAlias alias="userInfo" type="com.sdkj.system.vo.UserInfo" />
+ 
+ 	<select  id="GetOverFeedbackMatters"	parameterClass="java.lang.String"		 resultClass="evaluationTableVo"		>
+ 		$value$
+ 	</select>
+ 
+ 	<select  id="GetweeklyNotFeedbackUserInfo"	parameterClass="java.lang.String"		 resultClass="evaluationTableVo"		>
+ 		$value$
+ 	</select>
+ 	
+ 	
+ 	
+ 	<select  id="queryUserMattersScore"	parameterClass="java.lang.String"		 resultClass="evaluationTableVo"		>
+ 		$value$
+ 	</select>
+ 	<select  id="queryOverMattersUserPhone"	parameterClass="java.lang.String"		 resultClass="userInfo"		>
+ 		$value$
+ 	</select>
+		
+ 	<select  id="queryAfterScore"	parameterClass="java.lang.String"		 resultClass="java.lang.String"		>
+ 		$value$
+ 	</select>
+		
+ 
+ 	<select  id="queryStandList"	parameterClass="java.lang.String"		 resultClass="standardVo"		>
+ 		$value$
+ 	</select>
+ 
+ 	<select  id="queryStandardById"	parameterClass="java.lang.String"		 resultClass="standardVo"		>
+ 		$value$
+ 	</select>
+		
+		
+		
+ <update id="updateEvakuaCheck" 	parameterClass="java.lang.String"		>
+ 	$value$
+ </update>
+		
+ <update id="AddSendMsg" 	parameterClass="java.lang.String"		>
+ 	$value$
+ </update>
+		
+		
+ <update id="addEvakuaCheck" 	parameterClass="java.lang.String"		>
+ 	$value$
+ </update>
+		
+ <update id="UpdateOverFeedBackScore" 	parameterClass="java.lang.String"		>
+ 	$value$
+ </update>
+	 
+	<select id="queryEvaluationCount" parameterClass="java.lang.String" resultClass="int">
+				select count(*) as prjcheckinfocount from ($value$)
+		</select>
+	<select id="queryFeedbackCheckCount" parameterClass="java.lang.String" resultClass="int">
+				 $value$ 
+		</select>
+	 
+	 
+	<select id="queryUserMattersListCount" parameterClass="java.lang.String" resultClass="int">
+				select count(*) as prjcheckinfocount from ($value$)
+		</select>
+	 
+	<select id="queryEvaluation" parameterClass="java.lang.String" resultClass="evaluationTableVo">
+ 	$value$
+		</select>
+	 
+	<select id="queryUserMattersList" parameterClass="java.lang.String" resultClass="mattersVo">
+ 	$value$
+		</select>
+	 
+		
+ <select id="queryUserInfoScoreByID" 	parameterClass="java.lang.String"	 resultClass="java.lang.String"		>
+ 	$value$
+ </select>
+	 
+	  <update id="addEvaluationTable" 	parameterClass="evaluationTableVo"		>
+	 	 insert into evaluationtable
+   (id, user_id, matters_id, score, before_score, alfter_score,inittime,lastupdatetime, zbid)
+ values
+   (#id#,#user_id#,#matters_id#,#score#,#before_score#,#alfter_score#,#inittime#,#lastupdatetime#,#zbid#)
+	 			
+	 </update>
+	 
+	 
+	 
+	 
+</sqlMap > 

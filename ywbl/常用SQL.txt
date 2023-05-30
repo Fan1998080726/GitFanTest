@@ -1,0 +1,91 @@
+select * from SYSTEM_MENU_INFO as of timestamp to_timestamp('2018-10-18 09:05:00','yyyy-mm-dd hh24:mi:ss');
+
+数据库恢复
+
+insert into bumenfankui select * from bumenfankui; //插入所查询的语句
+截取字符串 oracle
+substr
+
+
+创建复制表
+create table duildsuperviseproject2019 as select * from duildsuperviseproject2018
+
+
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %> 
+fn:trim() 去空
+
+
+
+distinct
+
+
+查询该时间段 这个表的状态
+select * from 表名
+
+as of timestamp to_timestamp('2018-10-12 9:30:00', 'yyyy-mm-dd hh24:mi:ss');
+
+
+开启闪回
+alter table 表名 enable row movement;
+
+
+把表的状态闪回到这个时间段
+flashback table 表名 ?to timestamp TO_TIMESTAMP('2018-10-12 9:30:00', 'yyyy-mm-dd hh24:mi:ss');
+
+
+用完记得关闭闪回
+alter table 表名 disable row movement
+ 
+ 
+
+
+//重复数据只显示一条
+Select * From Prjchecksubinfo Where ID In (Select Max(ID) From Prjchecksubinfo Group By prjid)
+
+
+
+
+
+
+
+
+select cf_id,c_id,cf_name,cf_url,typeName,category,saomiaodate from uploadFile where c_id='20180910132221930349342790'and cf_type
+='Company'
+
+SQL1：select t.* ,f.prjname,f.BUILDCORPNAME from TBProjectCensorInfo   t  left join tbprojectinfo f on t.prjnum=f.prjnum  where t.PrjNum LIKE '%%' and t.censoredate (varchar,date,120)  LIKE '%%'and f.BUILDCORPNAME LIKE '%%' and f.prjname LIKE '%%'
+
+
+
+
+	select * from ( select k.*  from tbprojectinfo k 
+			  order by k.pkid desc) where  ROWNUM<=15 and pkid not in
+			 (select pkid from (select k1.pkid from  tbprojectinfo k1 
+			  order by k1.pkid desc)  where   ROWNUM<="+((15));
+
+
+	select * from ( select k.*  from tbcorpbasicinfo k   order by k.pkid desc) where  ROWNUM<=15
+ and pkid not in   (select pkid from (select k1.pkid from  tbcorpbasicinfo k1 order by k1.pkid desc)  where   ROWNUM<=0)
+
+
+
+
+
+
+
+
+
+
+
+
+delete from heimingdanleibiao   where exists 
+(select * from (select t.*,b.* from(select * from heimingdanleibiao  where 1=1 and companyname like '%%'  )t   ,  (select b.*
+from bumenfankui b  where  b.op='1'  and b.dept_name='建管处'  ) b where  t.id=b.hid)  where companyname='黑龙江苏中建筑劳务服务有限责任公司' and dishonest ='其他有履行能力而拒不履行生效法律文书确定义务的')
+
+
+
+
+
+
+
+
+

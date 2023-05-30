@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    background: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font: 12px/150% Arial, Verdana;
+    color: #666;
+    height: 100%;
+}
+
+.clearfix::after {
+    clear: both;
+    display: block;
+    height: 0;
+    content: '';
+}

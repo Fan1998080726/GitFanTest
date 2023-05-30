@@ -1,0 +1,68 @@
+input[type="text"],.scope3{
+	border-color: #878787;
+	border-style: solid;
+	border-top-width: 0px; 
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	font-size:16px;
+	font-weight:600;
+}/* input¿òÏÂ»®Ïß */
+.bigInput
+{
+	width:600px;
+}
+.midInput
+{
+	width:300px;
+}
+.thirdInput
+{
+	width:200px;
+}
+#contract
+{
+	font-weight:bold;
+	font-size:60px;
+}
+#biaoyi
+{
+	font-weight:bold;
+	font-size:25px;
+	font-family:SimHei;
+}
+.pageCode{text-align:center;}
+#rcTitle{
+	font-weight:bold;
+	font-size:30px;
+	font-family:SimSun;
+}
+.rcth{
+	font-size:20px;
+	height: 30px;
+	line-height:32px;
+	letter-spacing:0px;
+}
+.rcTb{
+	text-align: center;
+	line-height:32px;
+	letter-spacing:0px;
+}
+.rcTd1,.rcTd3{
+	width: 14%;
+	line-height:32px;
+	letter-spacing:0px;
+}
+.rcTd2{
+	width: 36%;
+	line-height:32px;
+	letter-spacing:0px;
+}
+.rcTd4{
+	width: 8%;
+	line-height:32px;
+	letter-spacing:0px;
+}
+#rcDiv{
+	font-size: 22px;
+}

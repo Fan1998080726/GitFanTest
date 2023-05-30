@@ -1,0 +1,93 @@
+#PageShow {
+    padding: 5px 0 0 0;
+    line-height: 18px;
+    margin-bottom: 5px;
+    color: #3967A3;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+    float: left;
+    margin-left: 15px;
+}
+
+#PageShow span {
+    color: #F69600;
+}
+
+#PageArea {
+    padding: 5px 0 0 0;
+    line-height: 20px;
+    text-align: center;
+    float: left;
+}
+
+input {
+    vertical-align: top;
+}
+
+.manu A {
+    background: #fff;
+    color: #666666;
+    font-size: 12px;
+    line-height: 1;
+    margin: 0;
+    text-decoration: none;
+    width: auto;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.manu A:hover {
+    background-color: #f69600;
+    color: #fff;
+    font-size: 12px;
+}
+
+.manu .disabled {
+    color: #ddd;
+    border: 1px solid #b7d8ee;
+    background-color: #fff;
+}
+
+.itTextC {
+    height: 25px;
+    line-height: 25px;
+    background-color: #f69600;
+    border: none;
+    color: #fff;
+    width: 25px !important;
+    padding-left: 0 !important;
+    font-size: 12px !important;
+
+}
+
+.InputStyleGO {
+    height: 25px !important;
+    line-height: 25px;
+    width: 40px;
+    border: none !important;
+    background-color: #fff !important;
+    padding: 0 0 0 5px !important;
+    margin-right: 5px !important;
+    font-size: 12px !important;
+}
+
+#PageArea .manu a,
+#PageArea .manu span {
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid #ececec;
+}
+
+#PageArea .manu span {
+    width: 25px;
+}
+
+.manu .current {
+    background-color: #f69600;
+    color: #fff;
+    font-size: 12px;
+}
+

@@ -1,0 +1,240 @@
+BODY {
+	BACKGROUND-IMAGE: url(Images/23.jpg); MARGIN: 0px; WORD-BREAK: break-all
+}
+TD {
+	FONT-SIZE: 12px; LINE-HEIGHT: 150%; FONT-FAMILY: Microsoft Sans Serif
+}
+.White {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A {
+	COLOR: #3c7fb9
+}
+.Title {
+	FONT-SIZE: 10.5pt
+}
+.Content {
+	FONT-SIZE: 14px
+}
+.top {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.top:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.top:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.top:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.td1 {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-LEFT: 18px; WIDTH: 148px; PADDING-TOP: 10px
+}
+.td2 {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 8px; PADDING-BOTTOM: 16px; PADDING-TOP: 14px
+}
+.text1 {
+	FONT-SIZE: 14px
+}
+.Error {
+	FONT-SIZE: 14px; COLOR: #ff6600
+}
+.Searchbutton {
+	PADDING-LEFT: 5px; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(Images/Loginbutton.gif); WIDTH: 65px; CURSOR: hand; COLOR: #376096; BORDER-TOP-STYLE: none; LINE-HEIGHT: 19px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 19px; BORDER-BOTTOM-STYLE: none
+}
+.TopSubjecttd {
+	PADDING-RIGHT: 30px; PADDING-LEFT: 30px; LINE-HEIGHT: 25px
+}
+.text3 {
+	FONT-SIZE: 16px
+}
+.green1 {
+	BORDER-BOTTOM: green 2px solid
+}
+.green2 {
+	BORDER-BOTTOM: green 1px solid
+}
+.button1 {
+	WIDTH: 45px; HEIGHT: 22px
+}
+.indextop {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.indextop:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.indextop:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.indextop:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.right {
+	COLOR: #ff6600; TEXT-DECORATION: none
+}
+.template {
+	FONT-SIZE: 14px; COLOR: #ff6600
+}
+.template:link {
+	FONT-SIZE: 14px; COLOR: #2d6ea6; TEXT-DECORATION: none
+}
+.template:visited {
+	FONT-SIZE: 14px; COLOR: #2d6ea6; TEXT-DECORATION: none
+}
+.template:hover {
+	FONT-SIZE: 14px; COLOR: #2d6ea6; TEXT-DECORATION: underline
+}
+.template:active {
+	FONT-SIZE: 14px; COLOR: #2d6ea6; TEXT-DECORATION: none
+}
+.linebg {
+	BACKGROUND-IMAGE: url(images/line1.jpg)
+}
+.tab3 {
+	BACKGROUND-IMAGE: url(Images/tab3.gif); WIDTH: 88px; HEIGHT: 30px
+}
+.tab1 {
+	BACKGROUND-IMAGE: url(Images/tab1.gif); WIDTH: 86px; HEIGHT: 24px
+}
+.toptitle:link {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.toptitle:visited {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.toptitle:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+.toptitle:active {
+	TEXT-DECORATION: none
+}
+.toptitlebj {
+	BACKGROUND-IMAGE: url(Images/toptitlebj.gif)
+}
+.cc0000 {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+.cc0000:link {
+	COLOR: #cc0000; TEXT-DECORATION: underline
+}
+.cc0000:visited {
+	COLOR: #cc0000; TEXT-DECORATION: underline
+}
+.cc0000:hover {
+	COLOR: #cc0000; TEXT-DECORATION: underline
+}
+.cc0000:active {
+	COLOR: #cc0000; TEXT-DECORATION: underline
+}
+.loginbg {
+	BACKGROUND-IMAGE: url(Images/login_14.gif)
+}
+.Navtop {
+	BACKGROUND-IMAGE: url(Images/line5.gif)
+}
+.deltd1 {
+	PADDING-LEFT: 25px; FONT-SIZE: 14px; HEIGHT: 30px; BACKGROUND-COLOR: #f2f2f2
+}
+.deltd2 {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 25px; FONT-SIZE: 14px; HEIGHT: 30px; BACKGROUND-COLOR: #ffffff
+}
+.deltd3 {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 25px; FONT-SIZE: 14px; PADDING-BOTTOM: 10px; LINE-HEIGHT: 25px; PADDING-TOP: 10px; BACKGROUND-COLOR: #ffffff
+}
+.bold {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+.cztitle:link {
+	FONT-SIZE: 14px; COLOR: #cc0000; TEXT-DECORATION: none
+}
+.cztitle:visited {
+	FONT-SIZE: 14px; COLOR: #cc0000; TEXT-DECORATION: none
+}
+.cztitle:hover {
+	FONT-SIZE: 14px; COLOR: #cc0000; TEXT-DECORATION: underline
+}
+.cztitle:active {
+	FONT-SIZE: 14px; COLOR: #cc0000; TEXT-DECORATION: none
+}
+.Regtext {
+	FONT-WEIGHT: bold; COLOR: #104264
+}
+.logintitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #0066cc
+}
+.logintab {
+	BACKGROUND-IMAGE: url(Images/login_14.gif)
+}
+.logintxt {
+	COLOR: #015cb5
+}
+.logintxt:link {
+	COLOR: #015cb5; TEXT-DECORATION: none
+}
+.logintxt:visited {
+	COLOR: #015cb5; TEXT-DECORATION: none
+}
+.logintxt:hover {
+	COLOR: #015cb5; TEXT-DECORATION: underline
+}
+.logintxt:active {
+	COLOR: #015cb5; TEXT-DECORATION: none
+}
+.logintxt1 {
+	COLOR: #015cb5
+}
+.logintxt1:link {
+	COLOR: #015cb5; TEXT-DECORATION: underline
+}
+.logintxt1:visited {
+	COLOR: #015cb5; TEXT-DECORATION: underline
+}
+.logintxt1:hover {
+	COLOR: #015cb5; TEXT-DECORATION: none
+}
+.logintxt1:active {
+	COLOR: #015cb5; TEXT-DECORATION: none
+}
+.loginwenben {
+	COLOR: #666666
+}
+.cztabletext {
+	BACKGROUND-IMAGE: url(Images/table1.gif); WIDTH: 98px; COLOR: #175387; HEIGHT: 32px
+}
+.yinhangtd {
+	PADDING-LEFT: 13px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; BACKGROUND-COLOR: #ffffff
+}
+.yinhangtd1 {
+	HEIGHT: 25px; BACKGROUND-COLOR: #ffffff
+}
+.regbutton {
+	PADDING-LEFT: 5px; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(Images/button.gif); WIDTH: 141px; CURSOR: pointer; COLOR: #376096; BORDER-TOP-STYLE: none; LINE-HEIGHT: 22px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 22px; BORDER-BOTTOM-STYLE: none
+}
+.cgsbutton {
+	PADDING-LEFT: 5px; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(Images/cg.gif); WIDTH: 73px; CURSOR: pointer; COLOR: #376096; BORDER-TOP-STYLE: none; LINE-HEIGHT: 20px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 20px; BORDER-BOTTOM-STYLE: none
+}
+.smallsbutton {
+	FONT-SIZE: 12px; BACKGROUND-IMAGE: url(Images/small.gif); WIDTH: 38px; CURSOR: pointer; COLOR: #376096; BORDER-TOP-STYLE: none; LINE-HEIGHT: 20px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 20px; BORDER-BOTTOM-STYLE: none
+}
+.bigbutton {
+	FONT-SIZE: 12px; BACKGROUND-IMAGE: url(Images/big.gif); WIDTH: 95px; CURSOR: pointer; COLOR: #376096; BORDER-TOP-STYLE: none; LINE-HEIGHT: 22px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 22px; BORDER-BOTTOM-STYLE: none
+}
+.noarrow {
+	FONT-SIZE: 12px; BACKGROUND-IMAGE: url(Images/noarrow.gif); WIDTH: 95px; CURSOR: pointer; COLOR: #376096; BORDER-TOP-STYLE: none; LINE-HEIGHT: 22px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 22px; BORDER-BOTTOM-STYLE: none
+}
+.000000 {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.000000:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.000000:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.000000:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.000000:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}

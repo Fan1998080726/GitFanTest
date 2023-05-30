@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace ="VideoView" > 
+
+  	<typeAlias alias ="videoviewvo" type ="com.sdkj.project.vo.VideoViewVo"/> 
+    
+	<select id="queryVideoViewList" parameterClass="String" resultClass="videoviewvo">
+		$value$
+	</select>
+	<select id="getVideoViewCount" resultClass="int" parameterClass="String">
+		select count(*) from ($value$) as ucount
+	</select> 
+	
+	<insert id="addVideoView" parameterClass="videoviewvo">
+		INSERT INTO video_file (
+			video_name,
+			video_url,
+			video_remark,
+			video_date,
+			pro_id,
+			video_user,SysTime
+		)VALUES(
+			#videoName#,
+			#videoUrl#,
+			#videoRemark#,
+			now(),
+			#proId#,
+			#videoUser#,#SysTime#
+		)
+	</insert>
+	
+		<update id="updateVideoView" parameterClass="videoviewvo">
+		update video_file 
+		set video_name=#videoName#,video_url=#videoUrl#,video_remark=#videoRemark#,video_date=now(),video_user=#videoUser#
+		where video_id = #videoId#
+	</update>
+	
+	<select id="queryVideoView" parameterClass="String" resultClass="videoviewvo">
+		 SELECT 
+		  t1.video_id 'videoId',
+			t1.video_name 'videoName', 
+			t1.video_url 'videoUrl', 
+		 	t1.video_remark 'videoRemark', 
+		 	cast(date_format(t1.video_date,'%Y-%m-%d %H:%i:%s') as char(19)) 'videoDate', 
+		 	t1.pro_id 'proId', 
+		 	t2.user_name 'videoUserName',
+			t1.video_user 'videoUser' 
+		 	FROM 
+		 video_file t1 , system_user_info t2 
+		 where t1.video_user = t2.id  and video_id = #id#
+	</select>
+	
+	<delete id="delvideoview" parameterClass="String">
+		delete from video_file where video_id = #id#
+	</delete>
+	
+	
+	
+</sqlMap > 

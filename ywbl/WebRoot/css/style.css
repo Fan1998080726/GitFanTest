@@ -1,0 +1,174 @@
+BODY {
+	FONT-SIZE: 12px; MARGIN: 0px; COLOR: #000000; FONT-FAMILY: "??"
+}
+#toptable {
+	BORDER-TOP: #ff9900 5px solid
+}
+.bgcolor_orange {
+	BACKGROUND-COLOR: #ff9900
+}
+.tcolor_orange2 {
+	FONT-SIZE: 8px; COLOR: #ed6a02
+}
+A {
+	COLOR: #41478a
+}
+A.area {
+	COLOR: #8a8a8a; TEXT-DECORATION: underline
+}
+A.area:link {
+	COLOR: #8a8a8a; TEXT-DECORATION: underline
+}
+A.area:visited {
+	COLOR: #8a8a8a; TEXT-DECORATION: underline
+}
+A.area:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+
+A.blacktext {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: underline
+}
+A.blacktext:link {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: underline
+}
+A.blacktext:visited {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: underline
+}
+A.blacktext:hover {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: underline
+}
+A.gtext {
+	FONT-SIZE: 12px; COLOR: #41478a; TEXT-DECORATION: underline
+}
+A.gtext:link {
+	FONT-SIZE: 12px; COLOR: #41478a; TEXT-DECORATION: underline
+}
+A.gtext:visited {
+	FONT-SIZE: 12px; COLOR: #41478a; TEXT-DECORATION: underline
+}
+A.gtext:hover {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: underline
+}
+.lt0 {
+	PADDING-LEFT: 45px; FONT-SIZE: 14px; BACKGROUND-IMAGE: url(../bobo/images/leftmenu2_r5_c1.jpg); COLOR: #000000; TEXT-ALIGN: left
+}
+.lt1 {
+	PADDING-LEFT: 45px; FONT-SIZE: 14px; BACKGROUND-IMAGE: url(../bobo/images/leftmenu_r5_c1.jpg); COLOR: #ff0000; TEXT-ALIGN: left
+}
+.lt00 {
+	PADDING-LEFT: 45px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND-IMAGE: url(../bobo/images/leftmenu2_r5_c1.jpg); COLOR: #000000; TEXT-ALIGN: left
+}
+.lt11 {
+	PADDING-LEFT: 45px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND-IMAGE: url(../bobo/images/leftmenu_r5_c1.jpg); COLOR: #ff0000; TEXT-ALIGN: left
+}
+.num2font {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+.num3 {
+	FONT-SIZE: 14px; COLOR: #ff0000
+}
+.inputstyle {
+	WIDTH: 104px; HEIGHT: 20px
+}
+.inputstyle3 {
+	HEIGHT: 16px
+}
+.inputstyle2 {
+	WIDTH: 50px; HEIGHT: 20px
+}
+.inputstyle4 {
+	FONT-SIZE: 12px; WIDTH: 132px; HEIGHT: 14px
+}
+.hborder {
+	BORDER-RIGHT: #e2e4df 6px solid; BORDER-TOP: #e2e4df 6px solid; MARGIN: 0px 10px 10px 0px; BORDER-LEFT: #e2e4df 6px solid; BORDER-BOTTOM: #e2e4df 6px solid
+}
+.title {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN: 10px 0px 0px; COLOR: #41478a; TEXT-DECORATION: underline
+}
+.title1 {
+	FONT-SIZE: 14px; MARGIN: 10px 0px 0px; COLOR: #41478a; TEXT-DECORATION: underline
+}
+.contant {
+	MARGIN: 5px 0px 0px
+}
+.url {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 5px 0px 0px; COLOR: #41478a; PADDING-TOP: 0px
+}
+.rborder {
+	BORDER-BOTTOM: #fe9900 1px solid
+}
+.fontred {
+	FONT-SIZE: 12px; COLOR: #ff0000
+}
+.fontred1 {
+	FONT-SIZE: 12px; COLOR: black
+}
+.boldfont {
+	FONT-WEIGHT: bold
+}
+.xiangguan {
+	BORDER-RIGHT: #c8c8c8 3px solid; BORDER-TOP: #c8c8c8 3px solid; MARGIN-TOP: 15px; DISPLAY: block; BORDER-LEFT: #c8c8c8 3px solid; BORDER-BOTTOM: #c8c8c8 3px solid
+}
+.fontb {
+	COLOR: #0b83b8
+}
+.cztitle:link {
+	FONT-SIZE: 14px; COLOR: #cc0000; TEXT-DECORATION: none
+}
+.cztitle:visited {
+	FONT-SIZE: 14px; COLOR: #cc0000; TEXT-DECORATION: none
+}
+.cztitle:hover {
+	FONT-SIZE: 14px; COLOR: #cc0000; TEXT-DECORATION: underline
+}
+.cztitle:active {
+	FONT-SIZE: 14px; COLOR: #cc0000; TEXT-DECORATION: none
+}
+TD {
+	FONT-FAMILY: Microsoft Sans Serif
+}
+BODY {
+	MARGIN: 0px; WORD-BREAK: break-all
+}
+.yinhangtd {
+	PADDING-LEFT: 13px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; BACKGROUND-COLOR: #ffffff
+}
+.yinhangtd1 {
+	HEIGHT: 25px; BACKGROUND-COLOR: #ffffff
+}
+.smartbutton {
+	BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7b9ebd 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde); BORDER-LEFT: #7b9ebd 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #7b9ebd 1px solid
+}
+.chaxun {
+	BACKGROUND-IMAGE: url(cha.jpg); WIDTH: 39px; CURSOR: pointer; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 23px; BORDER-BOTTOM-STYLE: none
+}
+.liebiao {
+	height: 110px;
+	width: 180px;
+	border: 1px solid #FF9900;
+	font-size: 9pt;
+	color: #333333;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+}
+.liebiao1 {
+	font-size: 9pt;
+	color: #000000;
+	text-decoration: none;
+	background-color: #DFDFDF;
+	padding: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+
+H1 {
+	DISPLAY: inline; FONT-WEIGHT: bold; FONT-SIZE: 16px
+}
+H2 {
+	DISPLAY: inline; FONT-WEIGHT: bold; FONT-SIZE: 14px
+}

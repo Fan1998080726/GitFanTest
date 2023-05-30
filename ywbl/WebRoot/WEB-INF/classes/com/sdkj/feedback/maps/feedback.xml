@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace ="prjcheckRYTJ" > 
+  <typeAlias alias="cooperateUnitsVo" type="com.sdkj.matters.vo.CooperateUnitsVo" />
+  <typeAlias alias="mattersupdateVo" type="com.sdkj.matters.vo.MattersupdateVo" />
+  <typeAlias alias="mattersVo" type="com.sdkj.matters.vo.MattersVo" />
+  <typeAlias alias="feedbackvo" type="com.sdkj.feedback.vo.FeedbackVo" />
+  <typeAlias alias="parmsVo" type="com.sdkj.matters.vo.ParmsVo" />
+  	<typeAlias alias="uploadFileVo"
+		type="com.sdkj.common.vo.UploadFileVo" />
+ 		<update	id="SaveFeedBack"		parameterClass="feedbackvo"		>
+ 			insert into feedback
+  (id, fid, matter_id, inittime, feedback_breaks, feedback_dept, feedback_person, feedback_id)
+values
+  (#id#,#fid#,#matter_id#,#inittime#,#feedback_breaks#,#feedback_dept#,#feedback_person#,#feedback_id#) 
+ 		</update>
+ 		
+ 		<update	id="delFeedBack"	 parameterClass="java.lang.String"				>
+ 		$value$
+ 		</update>
+ 		
+ 		<update	id="UpdateFeedBackState"	 parameterClass="java.lang.String"				>
+ 		$value$
+ 		</update>
+ 		
+ 		
+ 		<update	id="updateFeedBack"	 parameterClass="feedbackvo"          	>
+			 	 update feedback
+			 	   set   
+			       feedback_breaks = #feedback_breaks#,
+			       state = #state# 
+			   
+			 		 where  id=#id#
+ 		</update>
+ 		
+ 		
+ 	
+ 	<select	id="queryUserName"	parameterClass="java.lang.String"			resultClass="java.lang.String"	 >
+ 		$value$
+ 	</select>	
+ 	
+ 	<select	id="QueryAllFeedback"	parameterClass="java.lang.String"			resultClass="feedbackvo"	 >
+ 		$value$
+ 	</select>	
+ 	
+ 	<select	id="queryHeyanCount"	parameterClass="java.lang.String"			resultClass="int"	 >
+ 		$value$
+ 	</select>	
+ 	
+ 	<select	id="queryRequestDelayCount"	parameterClass="java.lang.String"			resultClass="int"	 >
+ 		$value$
+ 	</select>	
+ 	
+ 	<select	id="queryFeedback"	parameterClass="java.lang.String"			resultClass="feedbackvo"	 >
+ 		$value$
+ 	</select>	
+ 	
+ 	<select	id="queryFeedBackContent"	parameterClass="java.lang.String"			resultClass="java.lang.String"	 >
+ 		$value$
+ 	</select>	
+ 	
+ 	<select	id="queryFeedbackById"	parameterClass="java.lang.String"			resultClass="feedbackvo"	 >
+ 		$value$
+ 	</select>	
+ 	
+ 	<select	id="queryFeedBackList"	parameterClass="java.lang.String"			resultClass="feedbackvo"	 >
+ 		$value$
+ 	</select>	
+ 	
+ 	<select	id="queryAllFeedBack"	parameterClass="java.lang.String"			resultClass="feedbackvo"	 >
+ 		$value$
+ 	</select>	
+	 
+	<select id="queryAllFeedBackCount" parameterClass="java.lang.String" resultClass="int">
+				select count(*) as prjcheckinfocount from ($value$)
+		</select>
+</sqlMap > 
